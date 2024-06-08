@@ -1,4 +1,166 @@
-.img {
+/* Reset CSS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;    padding: 0;
+    border: 0;    font-size: 100%;
+    font: inherit;    vertical-align: baseline;
+}
+
+/* Global CSS var */
+
+:root {
+    --primary-color: #3498db; /* Light blue */
+    --secondary-color: #c2410c; /* Green */
+    --accent-color: #FFC60B;
+    --background-color: #ffde73;
+    --text-color: #030303; /* Dark grey */
+}
+
+
+/* CSS */
+
+body {
+    background-image: url('image/background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: monospace;
+    font-size: 18px;
+}
+
+/* header */
+
+header {
+    background-color: var(--background-color);;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    height: 8vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+nav > button {
+    background-color: var(--background-color);;
+    border: 2px solid black;
+    border-radius: 5px;
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+    padding: 10px  20px;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+/* content */
+
+#content {
+    background-color: var(--background-color);;
+    width : 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/* homePage */
+.h1{
+    margin-bottom: 100px;
+    font-size: 48px;
+    font-weight: bolder;
     width: 100%;
-    height: 500px;
+    text-align: center;
+}
+
+.hours, .location{
+    width: 500px;
+    margin-top: 50px;
+}
+
+.h2, .dishName, .dishPrice{
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.p2, .description{
+    padding-left: 100px;
+}
+
+/* menupage */
+.menuHead{
+    font-size: 48px;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+.boxDiv{
+    width: 400px;
+    height: 400px;
+    border: 5px solid var(--secondary-color);
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px 30px;
+    justify-content: space-between;
+}
+
+.dishName {
+    align-self: flex-start;
+    margin-bottom: 30px;
+}
+
+.description {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.category{
+    font-size: 36px;
+    font-weight: 800;
+    width: 250px;
+    height: 60px;
+    margin: auto;
+    border: 5px solid var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--accent-color);
+    align-content: center;
+    margin-top: 100px;
+}
+
+.dishPrice{
+    text-align: left;
+    align-self: center;
+
+}
+
+.imgMock{
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--background-color);
+    border-radius: 5px;
+    align-self: flex-end;
 }

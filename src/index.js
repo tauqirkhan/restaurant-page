@@ -6,6 +6,8 @@ const content = document.querySelector('#content');
 
 const buttons = document.querySelectorAll('button');
 
+homepage(content);
+
 buttons.forEach(button => {
     button.addEventListener('click', handleButton);
 });
